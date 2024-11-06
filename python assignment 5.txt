@@ -1,0 +1,94 @@
+
+n=int(input("enter no :"))
+while n>0:
+    r=n%10 
+    n=n//10  
+    print(r)
+
+# multiplication of a given no
+n=5
+for ele in range(1,11):
+    print(n,"*",ele,"=",n*ele)
+
+
+# count no of digits
+
+n=1495
+c=0
+while n>0:
+    n=n//10
+    c=c+1
+print("count of a given no is :",c)
+
+#sum of digits in a no
+n=14
+s=0
+while n>0:
+    r=n%10
+    n=n//10
+    s=s+r
+print("sum of given no is :", s)    
+
+#reversing a no
+ 
+n=123
+r=0
+while n>0:
+    r=n%10
+    n=n//10
+    r=r*10+r
+print(r)    
+
+n=12345
+s=str(n)
+print(s[::-1])
+
+
+n=1234
+while n>0:
+    r=n%10 
+    n=n//10  
+    print(r, end=" ")
+
+#check given no palindrome or not
+n=121
+re=0
+ori=n
+while n>0:
+    r=n%10
+    n=n%10
+    print(re)
+
+#find the sum of given no
+no_of_num=4
+s=0
+c=0
+while c<no_of_num:
+    n=int(input())
+    s=s+n
+    c=c+1
+print(s)    
+
+# sum of positive and negetive no
+n1=int(input("enter a no :"))
+n2=int(input("enter a no :"))
+
+s=n1-n2
+if s>=0:
+    print("positive no :", s)
+elif s<0:
+    print("negetive no", s)    
+
+#guess the no between 1 to 10
+
+import random
+r=random.randint(1,10)
+g=0
+while g!=r:
+    g=int(input())
+    if g<r:
+        print("it is smaller ")
+    elif g>r:
+        print("it is larger")
+    else:
+        print("correct guess")        
